@@ -1,2 +1,3 @@
-# Portfolio
-My software development portfolio showing some of the projects I have worked on.
+# Paul O'Rourke Portfolio
+
+This is my software development portfolio showing some of the projects I have worked on.
