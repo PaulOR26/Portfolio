@@ -9,100 +9,93 @@ body {
   font-weight: 100;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 940px;
-  padding: 0 10px;
-}
-
 .header {
   background: -webkit-linear-gradient(#eee, #333);
   background-size: cover;
   height: 280px;
   text-align: center;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+  top: 2px;
 }
 
-.mainBack {
+.header h1 {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+@media (min-width: 850px) {
+  .header h1 {
+    text-shadow: 2px 2px #000000ef;
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.splitscreen {
+  display: flex;
+}
+.splitscreen .left {
+  flex: 2;
+}
+.splitscreen .right {
+  flex: 1;
+}
+
+/* background below the header */
+.mainback {
   background: -webkit-linear-gradient(rgb(238, 236, 233), rgb(238, 233, 233));
 }
 
-main {
+/* all content below the menu / introduction */
+.content {
+  text-align: center;
   margin: auto;
   width: 70%;
 }
 
-main h2 {
-  text-align: center;
+/* content headers (e.g. 'Projects') */
+.content h2 {
   background: -webkit-linear-gradient(rgb(238, 236, 233), rgb(180, 155, 114));
-  /* color: rgb(238, 236, 233); */
-  /* text-shadow: 0px 0px 4px rgb(95, 95, 95); */
-  /* font-weight: 400; */
-
   color: rgb(44, 44, 44);
-  /* line-height: 100px; */
-  /* padding: 10px; */
   margin-top: 20;
   margin-bottom: 10px;
   text-transform: uppercase;
   font-weight: 300;
-
   text-shadow: 2px 2px #e4e4e4ef;
   font-size: 20px;
-  /* background: -webkit-linear-gradient(#eee, #333); */
-  /* -webkit-background-clip: text; */
-  /* -webkit-text-fill-color: transparent; */
 }
-main h3 {
-  text-align: center;
-  /* color: rgb(0, 0, 0); */
-  /* text-shadow: 0px 0px 20px rgb(66, 46, 14); */
-
+/* sub-headers (e.g. project titles) */
+.content h3 {
   margin-top: 10;
   margin-bottom: 10px;
-  /* text-transform: uppercase; */
   font-weight: 300;
   color: rgb(44, 44, 44);
   text-shadow: 2px 2px rgb(251, 255, 197);
   font-size: 20px;
 }
 
-main td {
-  text-align: center;
+/* project images */
+.all-projects img {
+  width: 320px;
+  height: 240px;
 }
 
-main img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-main .btns {
+/* buttons below the project images */
+.project-button {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-main table {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-main p {
-  text-align: center;
-}
-
-main figcaption {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-
-.button {
   background: -webkit-linear-gradient(rgb(99, 99, 99), rgb(0, 42, 75));
   border: none;
   color: rgb(238, 236, 233);
   padding: 5px 32px;
-  text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
@@ -110,12 +103,35 @@ main figcaption {
   cursor: pointer;
 }
 
-.button:hover,
-.nav ul li:hover {
+.menu-button {
+  display: inline-block;
+  color: rgb(238, 236, 233);
+  background: #000;
+  padding: 10px 10px;
+  text-decoration: none;
+  transition: background 0.5s;
+  width: 150px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.project-button:hover,
+.menu-button:hover {
   background: rgb(216, 202, 179);
   cursor: pointer;
   transition: background 0.5s;
   color: rgb(0, 42, 75);
+}
+
+#experience table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-projects figcaption {
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 table {
@@ -135,51 +151,9 @@ table tH:first-child {
   border-left: none;
 }
 
-.splitscreen {
-  display: flex;
-}
-.splitscreen .left {
-  flex: 2;
-}
-.splitscreen .right {
-  flex: 1;
-}
-
-.grey {
-  /* filter: grayscale(100%); */
+.headshot {
   border-radius: 50%;
   border: solid rgb(238, 236, 233) 1px;
-}
-
-.header .container {
-  position: relative;
-  top: 2px;
-}
-
-.header h1 {
-  color: #fff;
-  /* line-height: 100px; */
-  /* padding: 10px; */
-  margin-top: 0;
-  margin-bottom: 0px;
-  text-transform: uppercase;
-  font-weight: 200;
-
-  /* text-shadow: 2px 2px #ff0000; */
-}
-
-@media (min-width: 850px) {
-  .header h1 {
-    text-shadow: 2px 2px #000000ef;
-    font-size: 72px;
-    background: -webkit-linear-gradient(#eee, #333);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-}
-
-h2 {
-  margin-left: 20px;
 }
 
 .header p {
@@ -192,35 +166,4 @@ h2 {
   margin-bottom: 20px;
   margin-top: 0px;
   text-transform: uppercase;
-}
-
-.btn {
-  display: inline-block;
-  color: rgb(238, 236, 233);
-  background: #000;
-  padding: 10px 20px;
-  text-decoration: none;
-  transition: background 0.5s;
-  width: 150px;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-/* background: -webkit-linear-gradient(rgb(99, 99, 99), rgb(0, 42, 75));
-border: none;
-color: rgb(238, 236, 233); */
-/* padding: 5px 32px; */
-/* text-align: center;
-text-decoration: none; */
-/* display: inline-block; */
-/* font-size: 16px; */
-/* margin: 4px 2px; */
-/* cursor: pointer; */
-
-.btn:hover,
-.nav ul li:hover {
-  background: rgb(216, 202, 179);
-  cursor: pointer;
-  color: rgb(0, 42, 75);
-  transition: background 0.5s;
 }

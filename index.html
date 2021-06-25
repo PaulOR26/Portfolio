@@ -12,23 +12,19 @@
   <body>
     <div class="header">
       <p>pj_orourke@outlook.com | github.com/paulor26</p>
-
-      <div class="container">
-        <h1>Portfolio</h1>
-        <p>Paul O'Rourke | Trainee Software Developer</p>
-        <img class="grey" src="images/hs5.jpg" width="140px" />
-        <br />
-      </div>
+      <h1>Portfolio</h1>
+      <p>Paul O'Rourke | Trainee Software Developer</p>
+      <img class="headshot" src="images/hs5.jpg" width="140px" />
+      <br />
     </div>
-    <div class="mainBack">
-      <!-- <img src="images/spotlight.jpg" alt="back img" /> -->
+    <div class="mainback">
       <div class="splitscreen">
         <div class="left">
           <div class="menu">
-            <a class="btn" href="#projects">Projects</a><br />
-            <a class="btn" href="#experience">Experience</a><br />
-            <a class="btn" href="#journey">My Coding Journey</a><br />
-            <a class="btn" href="#contact">Contact</a><br /><br />
+            <a class="menu-button" href="#projects">Projects</a><br />
+            <a class="menu-button" href="#experience">Experience</a><br />
+            <a class="menu-button" href="#journey">My Coding Journey</a><br />
+            <a class="menu-button" href="#contact">Contact</a><br /><br />
           </div>
         </div>
 
@@ -38,158 +34,152 @@
         </div>
       </div>
 
-      <main class="box">
-        <h2 id="projects">Projects</h2>
-        <div>
-          <div id="left">
-            <figure>
-              <h3 id="finalproj">Northcoders Final Project</h3>
-              <img
-                src="images/game-reviews.png"
-                width="320"
-                height="240"
-                alt="Quality Assurance Portal"
-              />
-              <div class="btns">
-                <a href="#" target="_blank">
-                  <button class="button">Link to more info</button>
+      <main class="content">
+        <div class="content-item" id="projects">
+          <h2>Projects</h2>
+          <div class="all-projects">
+            <div class="project1">
+              <figure>
+                <h3 class="projtitle" id="finalproj">
+                  Northcoders Final Project
+                </h3>
+                <img
+                  src="images/game-reviews.png"
+                  alt="Northcoders Final Project"
+                />
+                <br />
+                <a class="project-button" href="#" target="_blank"
+                  >Link to more info
                 </a>
-              </div>
-              <figcaption>Description of the project</figcaption>
-            </figure>
-          </div>
-          <div id="left">
-            <figure>
-              <h3 id="gameapi">Game Reviews API</h3>
-              <img
-                src="images/game-reviews.gif"
-                width="320"
-                height="240"
-                alt="Game Reviews"
-              />
-              <br />
-
-              <div class="btns">
+                <figcaption>Description of the project</figcaption>
+              </figure>
+            </div>
+            <div class="project2">
+              <figure>
+                <h3 id="gameapi">Game Reviews API</h3>
+                <img src="images/game-reviews.gif" alt="Game Reviews" />
+                <br />
                 <a
+                  class="project-button"
                   href="https://game-reviews-project.herokuapp.com/api"
                   target="_blank"
                 >
-                  <button class="button">Visit URL</button>
+                  Visit URL
                 </a>
-
                 <a
+                  class="project-button"
                   href="https://github.com/PaulOR26/game-reviews-api"
                   target="_blank"
                 >
-                  <button class="button">View on GitHub</button>
+                  View on GitHub
                 </a>
-              </div>
-
-              <figcaption>
-                This project was to build a backend service that provides
-                application data to a front end architecture.
-              </figcaption>
-            </figure>
-          </div>
-          <div id="left">
-            <figure>
-              <h3 id="portal">Quality Assurance Portal</h3>
-              <img
-                src="images/game-reviews.png"
-                width="320"
-                height="240"
-                alt="Quality Assurance Portal"
-              />
-              <div class="btns">
-                <a href="#" target="_blank">
-                  <button class="button">Link to more info</button>
+                <figcaption>
+                  This project was to build a backend service that provides
+                  application data to a front end architecture.
+                </figcaption>
+              </figure>
+            </div>
+            <div class="project3">
+              <figure>
+                <h3 id="portal">Quality Assurance Portal</h3>
+                <img
+                  src="images/game-reviews.png"
+                  alt="Quality Assurance Portal"
+                />
+                <br />
+                <a class="project-button" href="#" target="_blank">
+                  Link to more info
                 </a>
-              </div>
-              <figcaption>
-                This project was to build a hub for a call centre Quality
-                Assurance team where they could mark calls, track performance,
-                produce reports, and calibrate internal quality, all in one
-                place replacing the spreadsheets they previously used.
-              </figcaption>
-            </figure>
+                <figcaption>
+                  This project was to build a hub for a call centre Quality
+                  Assurance team where they could mark calls, track performance,
+                  produce reports, and calibrate internal quality, all in one
+                  place replacing the spreadsheets they previously used.
+                </figcaption>
+              </figure>
+            </div>
           </div>
         </div>
 
-        <h2 id="experience">Experience</h2>
+        <div class="content-item" id="experience">
+          <h2>Experience</h2>
+          <table>
+            <tr>
+              <th>Programming Languages</th>
+              <th>Libraries & Frameworks</th>
+              <th>Skills</th>
+              <th>Tools & Platforms</th>
+            </tr>
+            <tr>
+              <td>Javascript (ES8)</td>
+              <td>Node JS</td>
+              <td>Test Driven Development</td>
+              <td>Git</td>
+            </tr>
+            <tr>
+              <td>VBA</td>
+              <td>Express JS</td>
+              <td>Problem Solving</td>
+              <td>PostgreSQL</td>
+            </tr>
+            <tr>
+              <td>SQL</td>
+              <td>React</td>
+              <td>Pair Programming</td>
+              <td>Heroku</td>
+            </tr>
+            <tr>
+              <td>HTML</td>
+              <td>Jest</td>
+              <td>Command Line</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td></td>
+              <td>MS Office</td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
 
-        <table>
-          <tr>
-            <th>Programming Languages</th>
-            <th>Libraries & Frameworks</th>
-            <th>Skills</th>
-            <th>Tools & Platforms</th>
-          </tr>
-          <tr>
-            <td>Javascript (ES8)</td>
-            <td>Node JS</td>
-            <td>Test Driven Development</td>
-            <td>Git</td>
-          </tr>
-          <tr>
-            <td>VBA</td>
-            <td>Express JS</td>
-            <td>Problem Solving</td>
-            <td>PostgreSQL</td>
-          </tr>
-          <tr>
-            <td>SQL</td>
-            <td>React</td>
-            <td>Pair Programming</td>
-            <td>Heroku</td>
-          </tr>
-          <tr>
-            <td>HTML</td>
-            <td>Jest</td>
-            <td>Command Line</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>CSS</td>
-            <td></td>
-            <td>MS Office</td>
-            <td></td>
-          </tr>
-        </table>
+        <div class="content-item" id="journey">
+          <h2>My Coding Journey</h2>
+          <figure>
+            <p>
+              I first discovered coding when I realised I could automate some of
+              my manual tasks at work using Excel. I started creating an
+              application using formulas and then taught myself some basic VBA
+              to better the functionality of it. My interest in coding grew as I
+              began to teach myself some Python and C# and realised how much I
+              enjoyed the logical and creative aspects of it.<br /><br />
+              <!-- tooltip for links -->
+              In my most recent job I honed my VBA skills and taught myself how
+              to use Access databases in order to
+              <a href="#portal" target="_blank">build a system</a> that my team
+              members could complete their work using. The system also provides
+              MI and KPI statistics for both my team members and the agents they
+              monitor, and produces reports for associated teams within the
+              business and senior management. It is now the main tool that my
+              business area uses for their BAU tasks which I'm incredibly proud
+              of and it continues to positively impact the business after I have
+              left.<br /><br />
+              Gaining the confidence that I could turn my coding hobby into a
+              career, I explored various education options. I decided to apply
+              for a place at
+              <a href="https://northcoders.com" target="_blank">Northcoders</a>
+              on the advice of the IT recruitment manager at my previous
+              workplace and learning what the course involved. I've found
+              Northcoders to be an incredibly rewarding experience and I'm
+              amazed at how much I've learnt. (describe stuff I've learnt)
+            </p>
+          </figure>
+        </div>
 
-        <h2 id="journey">My Coding Journey</h2>
-
-        <figure>
-          <p>
-            I first discovered coding when I realised I could automate some of
-            my manual tasks at work using Excel. I started creating an
-            application using formulas and then taught myself some basic VBA to
-            better the functionality of it. My interest in coding grew as I
-            began to teach myself some Python and C# and realised how much I
-            enjoyed the logical and creative aspects of it.<br /><br />
-            <!-- tooltip for links -->
-            In my most recent job I honed my VBA skills and taught myself how to
-            use Access databases in order to
-            <a href="#portal" target="_blank">build a system</a> that my team
-            members could complete their work using. The system also provides MI
-            and KPI statistics for both my team members and the agents they
-            monitor, and produces reports for associated teams within the
-            business and senior management. It is now the main tool that my
-            business area uses for their BAU tasks which I'm incredibly proud of
-            and it continues to positively impact the business after I have
-            left.<br /><br />
-            Gaining the confidence that I could turn my coding hobby into a
-            career, I explored various education options. I decided to apply for
-            a place at
-            <a href="https://northcoders.com" target="_blank">Northcoders</a> on
-            the advice of the IT recruitment manager at my previous workplace
-            and learning what the course involved. I've found Northcoders to be
-            an incredibly rewarding experience and I'm amazed at how much I've
-            learnt. (describe stuff I've learnt)
-          </p>
-        </figure>
-
-        <h2 id="contact">Contact</h2>
-        <p>contact form and email address here</p>
+        <div class="content-item" id="contact">
+          <h2>Contact</h2>
+          <p>contact form and email address here</p>
+        </div>
       </main>
     </div>
   </body>
