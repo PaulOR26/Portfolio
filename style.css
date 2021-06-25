@@ -33,15 +33,37 @@ main {
 
 main h2 {
   text-align: center;
-  background: -webkit-linear-gradient(rgb(240, 240, 240), rgb(111, 128, 0));
-  color: rgb(32, 0, 121);
-  text-shadow: 1px 1px #b2f6ffef;
-  font-weight: 400;
+  background: -webkit-linear-gradient(rgb(238, 236, 233), rgb(180, 155, 114));
+  /* color: rgb(238, 236, 233); */
+  /* text-shadow: 0px 0px 4px rgb(95, 95, 95); */
+  /* font-weight: 400; */
+
+  color: rgb(44, 44, 44);
+  /* line-height: 100px; */
+  /* padding: 10px; */
+  margin-top: 20;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 300;
+
+  text-shadow: 2px 2px #e4e4e4ef;
+  font-size: 20px;
+  /* background: -webkit-linear-gradient(#eee, #333); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
 }
 main h3 {
   text-align: center;
-  color: rgb(0, 0, 0);
-  text-shadow: 0px 0px 1px #ff8f8fef;
+  /* color: rgb(0, 0, 0); */
+  /* text-shadow: 0px 0px 20px rgb(66, 46, 14); */
+
+  margin-top: 10;
+  margin-bottom: 10px;
+  /* text-transform: uppercase; */
+  font-weight: 300;
+  color: rgb(44, 44, 44);
+  text-shadow: 2px 2px rgb(251, 255, 197);
+  font-size: 20px;
 }
 
 main td {
