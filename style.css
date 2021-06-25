@@ -100,7 +100,7 @@ main figcaption {
 .button {
   background: -webkit-linear-gradient(rgb(99, 99, 99), rgb(0, 42, 75));
   border: none;
-  color: rgb(251, 255, 197);
+  color: rgb(238, 236, 233);
   padding: 5px 32px;
   text-align: center;
   text-decoration: none;
@@ -112,9 +112,10 @@ main figcaption {
 
 .button:hover,
 .nav ul li:hover {
-  background: #36e7ff;
+  background: rgb(216, 202, 179);
   cursor: pointer;
   transition: background 0.5s;
+  color: rgb(0, 42, 75);
 }
 
 table {
@@ -201,11 +202,25 @@ h2 {
   text-decoration: none;
   transition: background 0.5s;
   width: 150px;
+  font-size: 16px;
+  font-weight: 300;
 }
+
+/* background: -webkit-linear-gradient(rgb(99, 99, 99), rgb(0, 42, 75));
+border: none;
+color: rgb(238, 236, 233); */
+/* padding: 5px 32px; */
+/* text-align: center;
+text-decoration: none; */
+/* display: inline-block; */
+/* font-size: 16px; */
+/* margin: 4px 2px; */
+/* cursor: pointer; */
 
 .btn:hover,
 .nav ul li:hover {
-  background: #ff4343;
+  background: rgb(216, 202, 179);
   cursor: pointer;
+  color: rgb(0, 42, 75);
   transition: background 0.5s;
 }
