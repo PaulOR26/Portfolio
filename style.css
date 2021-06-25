@@ -144,6 +144,7 @@ table {
 table th {
   border-left: 1px dotted rgb(59, 59, 59);
   padding: 5px;
+  color: rgb(0, 42, 75);
 }
 table td {
   border-left: 1px dotted rgb(59, 59, 59);
