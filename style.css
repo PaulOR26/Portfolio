@@ -29,12 +29,15 @@ main {
 
 main h2 {
   text-align: center;
-  background: -webkit-linear-gradient(rgb(255, 254, 216), rgb(67, 78, 0));
-  color: rgb(0, 90, 117);
-  text-shadow: 1px 1px #fafafaef;
+  background: -webkit-linear-gradient(rgb(240, 240, 240), rgb(111, 128, 0));
+  color: rgb(32, 0, 121);
+  text-shadow: 1px 1px #b2f6ffef;
+  font-weight: 400;
 }
 main h3 {
   text-align: center;
+  color: rgb(59, 0, 0);
+  text-shadow: 1px 1px #ffffffef;
 }
 
 main td {
