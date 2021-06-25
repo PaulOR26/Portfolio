@@ -92,13 +92,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: -webkit-linear-gradient(rgb(99, 99, 99), rgb(0, 42, 75));
+  background: -webkit-radial-gradient(rgb(238, 236, 233), rgb(0, 42, 75));
   border: none;
   color: rgb(238, 236, 233);
+  text-shadow: 1px 1px 4px rgb(0, 0, 0);
   padding: 5px 32px;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  font-weight: 450;
   margin: 4px 2px;
   cursor: pointer;
 }
@@ -117,10 +119,11 @@ body {
 
 .project-button:hover,
 .menu-button:hover {
-  background: rgb(216, 202, 179);
+  background: -webkit-radial-gradient(rgb(0, 42, 75), rgb(238, 236, 233));
   cursor: pointer;
   transition: background 0.5s;
-  color: rgb(0, 42, 75);
+  color: rgb(238, 236, 233);
+  text-shadow: 1px 1px 4px rgb(0, 0, 0);
 }
 
 #experience table {
@@ -140,6 +143,7 @@ table {
 }
 table th {
   border-left: 1px dotted rgb(59, 59, 59);
+  padding: 5px;
 }
 table td {
   border-left: 1px dotted rgb(59, 59, 59);
