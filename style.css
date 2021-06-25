@@ -22,6 +22,69 @@ body {
   text-align: center;
 }
 
+main {
+  margin: auto;
+  width: 70%;
+}
+
+main h2 {
+  text-align: center;
+  background: -webkit-linear-gradient(rgb(255, 254, 216), rgb(67, 78, 0));
+  color: rgb(0, 90, 117);
+  text-shadow: 1px 1px #fafafaef;
+}
+main h3 {
+  text-align: center;
+}
+
+main td {
+  text-align: center;
+}
+
+main img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+main .btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main p {
+  text-align: center;
+}
+
+main figcaption {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+table {
+  border: none;
+  border-collapse: collapse;
+}
+table th {
+  border-left: 1px dotted rgb(59, 59, 59);
+}
+table td {
+  border-left: 1px dotted rgb(59, 59, 59);
+}
+table td:first-child {
+  border-left: none;
+}
+table tH:first-child {
+  border-left: none;
+}
+
 .splitscreen {
   display: flex;
 }
