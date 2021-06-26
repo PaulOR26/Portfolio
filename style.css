@@ -24,6 +24,13 @@ th {
   font-weight: 300;
 }
 
+.intro,
+figcaption,
+td,
+.content-item p {
+  color: rgb(54, 54, 54);
+}
+
 .project-button,
 h3 {
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
