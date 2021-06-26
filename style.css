@@ -9,46 +9,7 @@ body {
   font-weight: 100;
 }
 
-p,
-figcaption,
-td {
-  font-family: monaco, Consolas, Lucida Console, monospace;
-}
-
-.menu-button,
-h2,
-th {
-  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
-    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-  text-transform: uppercase;
-  font-weight: 300;
-}
-
-.intro,
-figcaption,
-td,
-.content-item p {
-  color: rgb(54, 54, 54);
-}
-
-.project-button,
-h3 {
-  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
-    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-  font-weight: 300;
-}
-
-h2 {
-  font-size: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-top: 20;
-  margin-bottom: 10px;
-
-  text-shadow: 2px 2px #e4e4e4ef;
-  color: rgb(44, 44, 44);
-}
-
+/* header styling */
 .header {
   background: -webkit-linear-gradient(#eee, #333);
   background-size: cover;
@@ -60,14 +21,7 @@ h2 {
   top: 2px;
 }
 
-.header h1 {
-  color: #fff;
-  margin-top: 0;
-  margin-bottom: 0px;
-  text-transform: uppercase;
-  font-weight: 200;
-}
-
+/* header title styling */
 @media (min-width: 850px) {
   .header h1 {
     text-shadow: 2px 2px #000000ef;
@@ -75,9 +29,15 @@ h2 {
     background: -webkit-linear-gradient(#eee, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-weight: 200;
   }
 }
 
+/* arrange menu buttons and intro paragraph */
 .splitscreen {
   display: flex;
 }
@@ -89,7 +49,51 @@ h2 {
   flex: 1;
 }
 
-/* introduction text */
+/* set font for text sections */
+p,
+figcaption,
+td {
+  font-family: monaco, Consolas, Lucida Console, monospace;
+}
+
+/* set font for header sections */
+.menu-button,
+.project-button,
+h2,
+h3,
+th {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+/* remove uppercase text-transform for following project buttons and h3's */
+.project-button,
+h3 {
+  text-transform: none;
+}
+
+/* add additional formatting for h2's */
+h2 {
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px #e4e4e4ef;
+  color: rgb(44, 44, 44);
+}
+
+/* set colour for text items */
+.intro,
+figcaption,
+td,
+.content-item p {
+  color: rgb(54, 54, 54);
+}
+
+/* styling for intro text text */
 .splitscreen .right p {
   padding: 8px;
   font-size: 20px;
@@ -98,24 +102,24 @@ h2 {
   border-left-style: solid;
 }
 
-/* background below the header */
+/* set background below header colour */
 .mainback {
   background: -webkit-linear-gradient(rgb(238, 236, 233));
 }
 
-/* all content below the menu / introduction */
+/* format content below the menu / introduction */
 .content {
   text-align: center;
   margin: auto;
   width: 70%;
 }
 
-/* content headers (e.g. 'Projects') */
+/* style content headers (e.g. 'Projects') */
 .content h2 {
   background: -webkit-linear-gradient(rgb(238, 236, 233), rgb(180, 155, 114));
   width: auto;
 }
-/* sub-headers (e.g. project titles) */
+/* style sub-headers (e.g. project titles) */
 .content h3 {
   margin-top: 10;
   margin-bottom: 10px;
@@ -125,7 +129,7 @@ h2 {
   font-size: 20px;
 }
 
-/* project images */
+/* format project images */
 .all-projects img {
   width: 320px;
   height: 240px;
@@ -152,6 +156,7 @@ h2 {
   cursor: pointer;
 }
 
+/* menu buttons */
 .menu-button {
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
     DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
