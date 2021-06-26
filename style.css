@@ -9,6 +9,39 @@ body {
   font-weight: 100;
 }
 
+p,
+figcaption,
+td {
+  font-family: monaco, Consolas, Lucida Console, monospace;
+}
+
+.menu-button,
+h2,
+th {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.project-button,
+h3 {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20;
+  margin-bottom: 10px;
+
+  text-shadow: 2px 2px #e4e4e4ef;
+  color: rgb(44, 44, 44);
+}
+
 .header {
   background: -webkit-linear-gradient(#eee, #333);
   background-size: cover;
@@ -73,13 +106,7 @@ body {
 /* content headers (e.g. 'Projects') */
 .content h2 {
   background: -webkit-linear-gradient(rgb(238, 236, 233), rgb(180, 155, 114));
-  color: rgb(44, 44, 44);
-  margin-top: 20;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  font-weight: 300;
-  text-shadow: 2px 2px #e4e4e4ef;
-  font-size: 20px;
+  width: auto;
 }
 /* sub-headers (e.g. project titles) */
 .content h3 {
@@ -119,6 +146,8 @@ body {
 }
 
 .menu-button {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
+    DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   display: inline-block;
   color: rgb(238, 236, 233);
   text-shadow: 1px 1px 4px rgb(0, 0, 0);
@@ -126,7 +155,7 @@ body {
   padding: 10px 10px;
   text-decoration: none;
   transition: background 0.5s;
-  width: 150px;
+  width: 180px;
   font-size: 16px;
   font-weight: 300;
 }
@@ -170,11 +199,6 @@ table td:first-child {
 table th:first-child {
   border-left: none;
 }
-
-/* table tr {
-  padding-left: 2px;
-  padding-right: 2px;
-} */
 
 .headshot {
   border-radius: 50%;
