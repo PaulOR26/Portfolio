@@ -32,6 +32,19 @@ body {
   font-weight: 200; */
 }
 
+.header a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.603);
+  font-weight: 800;
+  font-size: 800;
+  text-shadow: 2px 2px #000000ef;
+  letter-spacing: 6px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  text-transform: uppercase;
+}
+
 .header h1 {
   text-shadow: 1px 1px #000000ef;
   color: #fff;
