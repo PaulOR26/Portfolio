@@ -19,17 +19,41 @@ body {
   padding: 0 10px;
   position: relative;
   top: 2px;
+  /* 
+  text-shadow: 2px 2px #000000ef;
+  color: #fff;
+  font-size: 72px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 0;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-weight: 200; */
+}
+
+.header h1 {
+  text-shadow: 1px 1px #000000ef;
+  color: #fff;
+  font-size: 42px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 0;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-weight: 200;
 }
 
 /* header title styling */
-@media (min-width: 850px) {
+@media only screen and (min-width: 600px) {
   .header h1 {
     text-shadow: 2px 2px #000000ef;
+    color: #fff;
     font-size: 72px;
     background: -webkit-linear-gradient(#eee, #333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: #fff;
     margin-top: 0;
     margin-bottom: 0px;
     text-transform: uppercase;
