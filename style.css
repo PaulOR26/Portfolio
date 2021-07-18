@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -387,12 +389,6 @@ table th:first-child {
   width: 50%;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-p,
-figcaption {
-  font-family: Quicksand;
-}
-
 .mainback p,
 .mainback figcaption {
   color: rgb(23, 23, 23);
@@ -407,4 +403,9 @@ figcaption {
   .portal-sec img {
     width: 100%;
   }
+}
+
+p,
+figcaption {
+  font-family: Quicksand;
 }
