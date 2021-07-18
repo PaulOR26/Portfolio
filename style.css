@@ -398,11 +398,15 @@ table th:first-child {
 }
 
 @media only screen and (max-width: 800px) {
-  .portal-sec {
+  .portalsec1 .portal-sec {
     flex-direction: column;
   }
   .portal-sec img {
     width: 100%;
+  }
+
+  .portalsec2 .portal-sec {
+    flex-direction: column-reverse;
   }
 }
 
