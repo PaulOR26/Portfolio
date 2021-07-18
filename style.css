@@ -1,97 +1,116 @@
-html,
 body {
   margin: 0;
   padding: 0;
-}
-
-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
+  width: 100%;
 }
 
 /* header styling */
 .header {
-  background: -webkit-linear-gradient(#eee, #333);
-  background-size: cover;
-  height: 280px;
-  text-align: center;
-  margin: 0 auto;
-  padding: 0 10px;
-  position: relative;
-  top: 2px;
-  /* 
-  text-shadow: 2px 2px #000000ef;
-  color: #fff;
-  font-size: 72px;
-  background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-top: 0;
-  margin-bottom: 0px;
-  text-transform: uppercase;
-  font-weight: 200; */
+  width: 100%;
+  background: linear-gradient(#eee, #333);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
-.header a {
-  text-decoration: none;
+.headerlinks {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 0;
+}
+
+.headerlinks p,
+.headerlinks a {
+  margin: 10px;
+  padding: 0;
+}
+
+.menu-button {
+  margin: 0;
+}
+
+.header a,
+.header p {
   color: rgba(255, 255, 255, 0.603);
   font-weight: 800;
   font-size: 800;
   text-shadow: 2px 2px #000000ef;
-  letter-spacing: 6px;
-  padding: 10px;
-  margin-bottom: 20px;
-  margin-top: 0px;
+  letter-spacing: 3px;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+.header p {
+  margin: 10px;
 }
 
 .header h1 {
   text-shadow: 1px 1px #000000ef;
   color: #fff;
   font-size: 42px;
-  background: -webkit-linear-gradient(#eee, #333);
+  background: linear-gradient(#eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-top: 0;
-  margin-bottom: 0px;
+  margin: 10px;
   text-transform: uppercase;
+  text-align: center;
   font-weight: 200;
 }
-
-/* header title styling */
-/* @media only screen and (min-width: 600px) {
-  .header h1 {
-    text-shadow: 2px 2px #000000ef;
-    color: #fff;
-    font-size: 72px;
-    background: -webkit-linear-gradient(#eee, #333);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-top: 0;
-    margin-bottom: 0px;
-    text-transform: uppercase;
-    font-weight: 200;
-  }
-} */
 
 /* arrange menu buttons and intro paragraph */
 .splitscreen {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 .splitscreen .left {
-  flex: 2;
-  z-index: 999999999;
+  width: 100%;
 }
+.splitscreen .left menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  justify-content: space-between;
+  background-color: black;
+}
+
 .splitscreen .right {
-  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-left-color: rgb(0, 64, 112);
+  border-left-width: 4px;
+  border-left-style: solid;
+  max-width: 300px;
+  padding: 0;
 }
 
 /* set font for text sections */
-p,
-figcaption,
-td {
-  font-family: monaco, Consolas, Lucida Console, monospace;
-}
 
 /* set font for header sections */
 .menu-button,
@@ -114,10 +133,8 @@ h3 {
 /* add additional formatting for h2's */
 h2 {
   font-size: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-top: 20;
-  margin-bottom: 10px;
+  padding-left: 0;
+  margin: 0;
   text-shadow: 2px 2px #e4e4e4ef;
   color: rgb(44, 44, 44);
 }
@@ -130,31 +147,48 @@ td,
   color: rgb(54, 54, 54);
 }
 
-/* styling for intro text text */
-.splitscreen .right p {
-  padding: 8px;
-  font-size: 20px;
-  border-left-color: rgb(0, 64, 112);
-  border-left-width: 4px;
-  border-left-style: solid;
+.intro {
+  margin: 0;
+  padding: 5px;
 }
+
+/* styling for intro text text */
 
 /* set background below header colour */
 .mainback {
-  background: -webkit-linear-gradient(rgb(238, 236, 233));
+  background-color: rgb(238, 236, 233);
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 /* format content below the menu / introduction */
 .content {
   text-align: center;
   margin: auto;
-  width: 70%;
+  margin: 20px;
+  padding: 0;
+}
+.content-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.section-header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px;
+  width: 100%;
 }
 
 /* style content headers (e.g. 'Projects') */
 .content h2 {
   background: -webkit-linear-gradient(rgb(238, 236, 233), rgb(180, 155, 114));
-  width: auto;
 }
 /* style sub-headers (e.g. project titles) */
 .content h3 {
@@ -162,50 +196,74 @@ td,
   margin-bottom: 10px;
   font-weight: 300;
   color: rgb(44, 44, 44);
-  text-shadow: 2px 2px rgb(251, 255, 197);
+  text-shadow: 2px 2px rgb(253, 255, 231);
   font-size: 20px;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+figure a {
+  margin: 0;
 }
 
 /* format project images */
 .all-projects img {
-  width: 320px;
-  height: 240px;
+  width: 280px;
+  height: 210px;
   border-style: outset;
   border-width: 4px;
-  border-color: rgb(194, 193, 175);
+  border-color: rgb(190, 190, 181);
 }
 
 /* buttons below the project images */
 .project-button {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background: -webkit-radial-gradient(rgb(103, 102, 101), rgb(0, 42, 75));
   border: none;
   color: rgb(238, 236, 233);
   text-shadow: 1px 1px 4px rgb(0, 0, 0);
-  padding: 5px 32px;
+  padding: 10px 10px;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   font-weight: 450;
-  margin: 4px 2px;
+  margin: 0;
   cursor: pointer;
+  width: 200px;
+}
+
+.project-buttons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 /* menu buttons */
 .menu-button {
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
     DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
   color: rgb(238, 236, 233);
   text-shadow: 1px 1px 4px rgb(0, 0, 0);
   background: -webkit-radial-gradient(rgb(92, 92, 92), rgb(0, 0, 0));
   padding: 10px 10px;
   text-decoration: none;
   transition: background 0.5s;
-  width: 180px;
-  font-size: 16px;
+  width: max-content;
+  font-size: 13px;
   font-weight: 300;
 }
 
@@ -218,15 +276,40 @@ td,
   text-shadow: 1px 1px 4px rgb(0, 0, 0);
 }
 
-#experience table {
+.experience {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin: 10px;
+}
+
+.skills {
+  margin: 10px;
+  width: 245px;
+  height: 205px;
+}
+
+.skills h4 {
+  margin: 15px;
+  color: rgb(0, 42, 75);
+}
+
+.skills p {
+  margin: 10px;
 }
 
 .all-projects figcaption {
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+.journey {
+  margin: 20px;
+}
+
+.journey p {
+  line-height: 200%;
 }
 
 table {
@@ -252,18 +335,23 @@ table th:first-child {
 .headshot {
   border-radius: 50%;
   border: solid rgb(238, 236, 233) 1px;
+  width: 100px;
+  margin: 10px;
 }
 
-.header p {
-  color: rgba(255, 255, 255, 0.603);
-  font-weight: 800;
-  font-size: 800;
-  text-shadow: 2px 2px #000000ef;
-  letter-spacing: 6px;
-  padding: 10px;
-  margin-bottom: 20px;
-  margin-top: 0px;
-  text-transform: uppercase;
+.pic-desc {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.section-header {
+  width: 60%;
+  margin: 0;
 }
 
 .portal-sec {
@@ -274,6 +362,7 @@ table th:first-child {
   padding: 20px;
   border-top-style: groove;
   border-width: 0.5px;
+  line-height: 200%;
 }
 .portal-sec p,
 .portal-sec img {
@@ -283,6 +372,7 @@ table th:first-child {
 .portal-intro {
   margin: 20px;
   text-align: center;
+  line-height: 150%;
 }
 .portal-intro p {
   margin-top: 20px;
@@ -293,8 +383,28 @@ table th:first-child {
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 700px) {
-  body {
-    background-color: lightblue;
+.portal-sec img {
+  width: 50%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+p,
+figcaption {
+  font-family: Quicksand;
+}
+
+.mainback p,
+.mainback figcaption {
+  color: rgb(23, 23, 23);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 800px) {
+  .portal-sec {
+    flex-direction: column;
+  }
+  .portal-sec img {
+    width: 100%;
   }
 }

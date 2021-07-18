@@ -12,40 +12,45 @@
   </head>
   <body>
     <div class="header">
-      <p>
-        pj_orourke@outlook.com |
+      <div class="headerlinks">
+        <p>pj_orourke@outlook.com</p>
+        <p>|</p>
         <a href="https://github.com/PaulOR26" target="_blank"
           >github.com/paulor26</a
         >
-      </p>
+      </div>
+
       <h1>Portfolio</h1>
       <p>Paul O'Rourke | Trainee Software Developer</p>
-      <img class="headshot" src="images/hs5.jpg" width="140px" />
+
       <br />
     </div>
     <div class="mainback">
       <div class="splitscreen">
         <div class="left">
           <div class="menu">
-            <a class="menu-button" href="#projects">Projects</a><br />
-            <a class="menu-button" href="#experience">Experience</a><br />
-            <a class="menu-button" href="#journey">My Coding Journey</a><br />
-            <a class="menu-button" href="#contact">Contact</a><br /><br />
+            <a class="menu-button" href="#projects">Projects</a>
+            <a class="menu-button" href="#experience">Experience</a>
+            <a class="menu-button" href="#journey">Coding Journey</a>
           </div>
         </div>
-
-        <div class="right">
-          <!-- <h2 id="intro">Introduction</h2> -->
-          <p class="intro">
-            I'm a trainee software developer based in Manchester, currently
-            attending the Northcoders bootcamp.
-          </p>
+        <div class="pic-desc">
+          <img class="headshot" src="images/hs5.jpg" width="140px" />
+          <div class="right">
+            <!-- <h2 id="intro">Introduction</h2> -->
+            <p class="intro">
+              I'm a trainee software developer based in Manchester, currently
+              attending the Northcoders bootcamp.
+            </p>
+          </div>
         </div>
       </div>
 
       <main class="content">
         <div class="content-item" id="projects">
-          <h2>Projects</h2>
+          <div class="section-header-container">
+            <h2 class="section-header">Projects</h2>
+          </div>
           <div class="all-projects">
             <div>
               <figure>
@@ -53,20 +58,22 @@
                 <p>July 2021</p>
                 <img src="images/reviewsapp.png" alt="Game Reviews Website" />
                 <br />
-                <a
-                  class="project-button"
-                  href="https://game-reviews-app.netlify.app/"
-                  target="_blank"
-                >
-                  Visit Website
-                </a>
-                <a
-                  class="project-button"
-                  href="https://github.com/PaulOR26/game-reviews-app/blob/main/README.md"
-                  target="_blank"
-                >
-                  View on GitHub
-                </a>
+                <div class="project-buttons">
+                  <a
+                    class="project-button"
+                    href="https://game-reviews-app.netlify.app/"
+                    target="_blank"
+                  >
+                    Visit Website
+                  </a>
+                  <a
+                    class="project-button"
+                    href="https://github.com/PaulOR26/game-reviews-app/blob/main/README.md"
+                    target="_blank"
+                  >
+                    View on GitHub
+                  </a>
+                </div>
                 <figcaption>
                   This project was to build a website using the API I had
                   created in June to consolidated my understanding of making a
@@ -80,20 +87,22 @@
                 <p>June 2021</p>
                 <img src="images/game-reviews.gif" alt="Game Reviews API" />
                 <br />
-                <a
-                  class="project-button"
-                  href="https://game-reviews-project.herokuapp.com/api"
-                  target="_blank"
-                >
-                  Visit API
-                </a>
-                <a
-                  class="project-button"
-                  href="https://github.com/PaulOR26/game-reviews-api/blob/main/README.md"
-                  target="_blank"
-                >
-                  View on GitHub
-                </a>
+                <div class="project-buttons">
+                  <a
+                    class="project-button"
+                    href="https://game-reviews-project.herokuapp.com/api"
+                    target="_blank"
+                  >
+                    Visit API
+                  </a>
+                  <a
+                    class="project-button"
+                    href="https://github.com/PaulOR26/game-reviews-api/blob/main/README.md"
+                    target="_blank"
+                  >
+                    View on GitHub
+                  </a>
+                </div>
                 <figcaption>
                   This project was to build a backend service that provides
                   application data to a front end architecture.
@@ -102,16 +111,18 @@
             </div>
             <div>
               <figure>
-                <h3 id="portal">Quality Assurance Portal</h3>
+                <h3 id="portal">Quality Assurance System</h3>
                 <p>August 2020</p>
                 <img
                   src="images/portalpic1small.png"
-                  alt="Quality Assurance Portal"
+                  alt="Quality Assurance System"
                 />
                 <br />
-                <a class="project-button" href="portal.html" target="_blank">
-                  More info
-                </a>
+                <div class="project-buttons">
+                  <a class="project-button" href="portal.html" target="_blank">
+                    More info
+                  </a>
+                </div>
                 <figcaption>
                   This project was to build a hub for a call centre Quality
                   Assurance team where they could mark calls, track performance,
@@ -141,50 +152,44 @@
         </div>
 
         <div class="content-item" id="experience">
-          <h2>Experience</h2>
-          <table>
-            <tr>
-              <th>Programming Languages</th>
-              <th>Libraries & Frameworks</th>
-              <th>Skills</th>
-              <th>Tools & Platforms</th>
-            </tr>
-            <tr>
-              <td>Javascript (ES8)</td>
-              <td>Node JS</td>
-              <td>Test Driven Development</td>
-              <td>Git</td>
-            </tr>
-            <tr>
-              <td>VBA</td>
-              <td>Express JS</td>
-              <td>Problem Solving</td>
-              <td>PostgreSQL</td>
-            </tr>
-            <tr>
-              <td>SQL</td>
-              <td>React</td>
-              <td>Pair Programming</td>
-              <td>Heroku</td>
-            </tr>
-            <tr>
-              <td>HTML</td>
-              <td>Jest</td>
-              <td>Command Line</td>
-              <td>Netlify</td>
-            </tr>
-            <tr>
-              <td>CSS</td>
-              <td></td>
-              <td>MS Office</td>
-              <td></td>
-            </tr>
-          </table>
+          <h2 class="section-header">Experience</h2>
+          <div class="experience">
+            <div class="skills">
+              <h4>Programming Languages</h4>
+              <p>Javascript (ES8)</p>
+              <p>VBA</p>
+              <p>SQL</p>
+              <p>HTML</p>
+              <p>CSS</p>
+            </div>
+            <div class="skills">
+              <h4>Libraries & Frameworks</h4>
+              <p>Node JS</p>
+              <p>Express JS</p>
+              <p>React</p>
+              <p>Jest</p>
+            </div>
+            <div class="skills">
+              <h4>Skills</h4>
+              <p>Test Driven Development</p>
+              <p>Problem Solving</p>
+              <p>Pair Programming</p>
+              <p>Command Line</p>
+              <p>MS Office</p>
+            </div>
+            <div class="skills">
+              <h4>Tools & Platforms</h4>
+              <p>Git</p>
+              <p>PostgreSQL</p>
+              <p>Heroku</p>
+              <p>Netlify</p>
+            </div>
+          </div>
         </div>
 
         <div class="content-item" id="journey">
-          <h2>My Coding Journey</h2>
-          <figure>
+          <h2 class="section-header">My Coding Journey</h2>
+          <figure class="journey">
             <p>
               I first discovered coding when I realised I could automate some of
               my manual tasks at work using Excel. I started creating an
