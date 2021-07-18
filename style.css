@@ -387,6 +387,7 @@ table th:first-child {
 
 .portal-sec img {
   width: 50%;
+  border-style: inset;
 }
 
 .mainback p,
