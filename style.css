@@ -343,7 +343,7 @@ table th:first-child {
 
 .pic-desc {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row wrap-reverse;
   justify-content: flex-end;
   align-items: center;
   width: 100%;
